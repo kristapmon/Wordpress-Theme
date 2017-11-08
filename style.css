@@ -1,0 +1,154 @@
+/*
+Theme Name: Simply Kristaps
+Author: Kristaps Bezbailis
+Description: Bootstrap Blog template converted to WordPress
+Version: 1.0
+Tags: bootstrap
+*/
+
+body {
+background-color: #ffffff;
+font-size: 17px;
+font-family: georgia,serif;
+}
+
+/* ------------------------------------------------------------ */
+/*                       General styling                        */
+/* ------------------------------------------------------------ */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/* ------------------------------------------------------------ */
+/*                    Navigation styling                        */
+/* ------------------------------------------------------------ */
+
+.navigation-cover {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  margin-bottom: 20px;}
+
+.navigation {
+  position:relative;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  float:left;
+}
+
+.navigation li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.site-title a {
+  display: block;
+  color: #000000;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------ */
+/*                        Footer styling                        */
+/* ------------------------------------------------------------ */
+
+.footer-cover {
+border-top: 1px solid #eee;
+padding: 0.5rem 0;
+}
+
+.footer-navigation {
+  position:relative;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation li {
+  float:left;
+}
+
+.footer-navigation li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer-navigation li a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 10px;
+}
+
+/* ------------------------------------------------------------ */
+/*                     Blog post styling                        */
+/* ------------------------------------------------------------ */
+
+.blog-author-date {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+h1 {
+  font-size: 4.0rem;
+}
+
+ul {
+  margin-left: 3rem;
+
+}
+
+/* ------------------------------------------------------------ */
+/*            Blog post comments styling                        */
+/* ------------------------------------------------------------ */
+
+
+.comment-list {
+  list-style-type: none;
+  color: red;
+}
+
+.comment-list ul {
+  list-style-type: none;
+}
