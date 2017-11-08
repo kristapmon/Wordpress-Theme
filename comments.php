@@ -28,7 +28,7 @@ if ( post_password_required() )
         </h2>
 
         <div class="comment-list">
-            <?php
+            <?php //test comment
                 wp_list_comments('type=comment&callback=custom_comment');
                 // Above previously: wp_list_comments( array('type=comment&callback=custom_comment'));
                 //wp_list_comments('type=comment&callback=format_comment');
