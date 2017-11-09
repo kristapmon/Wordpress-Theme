@@ -1,4 +1,8 @@
-# kristapsbezbailis.com-Wordpress-Theme
-kristapsbezbailis.com Wordpress Theme source
+# Minimalistic Wordpress Theme (Black & White)
+Barebones Wordpress theme using HTML, PHP, Javascript and Skeleton framework.
 
-Testting
+# Screenshots
+None just yet.
+
+# Notes
+First front-end coding project that I have made public.
