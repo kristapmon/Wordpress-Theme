@@ -14,30 +14,39 @@ add_theme_support( 'title-tag' );
 ?>
 
 
+<!-- Comment section content formatting -->
 
 <?php
-    // Custom comments
-    function custom_comment($comment, $args, $depth) {
+  function custom_comment($comment, $args, $depth) {
+      $GLOBALS['comment'] = $comment; //What does this do?
+?>
 
-      //What does this do?
-       $GLOBALS['comment'] = $comment; ?>
+<li class="comment-single-section" >
 
-        <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+  <!-- Display commenters avatar & name -->
+  <div class="comment-author-section">
+      <div class="comment-author-avatar"><?php echo get_avatar($comment, 80 ); // Get comment author avatar from ID/email ?> </div>
+      <div class="comment-author-name"><?php printf(__('%s'), get_comment_author()) ?></div>
+  </div>
 
-            <div class="comment-intro">
-                <?php echo get_avatar($comment, 80 ); // Gets commenters gravatar from ID or email ?>
-                <?php printf(__('%s'), get_comment_author()) ?>
+  <!-- Display message if comment is awaiting admin approval -->
+  <?php if ($comment->comment_approved == '0') : ?>
+    <em><php _e('Your comment is awaiting moderation.') ?></em><br />
+  <?php endif; ?>
 
-            </div>
+  <!-- Display comment content  -->
+  <div class="comment-content">
+    <?php comment_text(); ?>
+  </div>
 
-            <?php if ($comment->comment_approved == '0') : ?>
-                <em><php _e('Your comment is awaiting moderation.') ?></em><br />
-            <?php endif; ?>
+  <!-- Display Reply button & comment replies -->
+  <?php
+  // Test nested comments depth
+  if ( $depth < $args['max_depth'] ) : ?>
 
-            <?php comment_text(); ?>
+    <!-- Display comment reply -->
+    <div class="comment-reply">
+      <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+    </div>
 
-            <div class="reply">
-                <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-            </div>
-
-<?php } ?>
+  <?php endif; } ?>
