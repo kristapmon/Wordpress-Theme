@@ -12,4 +12,5 @@
 
 ?>
 
+<!-- Include comments.php template -->
 <?php comments_template(); ?>
