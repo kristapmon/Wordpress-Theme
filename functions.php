@@ -13,11 +13,10 @@ add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
 add_theme_support( 'title-tag' );
 ?>
 
-
-<!-- Comment section content formatting -->
-
 <?php
-  function custom_comment($comment, $args, $depth) {
+
+  //Comment section content formatting
+  function customized_comment($comment, $args, $depth) {
       $GLOBALS['comment'] = $comment; //What does this do?
 ?>
 
