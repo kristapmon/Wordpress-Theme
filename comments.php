@@ -19,7 +19,7 @@ if ( post_password_required() )
 
       <!-- List blog comments -->
       <div class="comment-list">
-          <?php wp_list_comments('type=comment&callback=custom_comment'); ?>
+          <?php //wp_list_comments('type=comment&callback=customized_comment'); ?>
       </div>
     <?php endif; ?>
 
