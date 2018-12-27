@@ -32,6 +32,11 @@
 
       </div>
 
+      <div class="one-third column site-additional-link">
+        <a href = "https://kristapsbezbailis.us17.list-manage.com/subscribe/post?u=691797bab4dc502fcb95aa08c&id=cf73f5d643">Mailing list</a>
+
+      </div>
+
     </div>
 
     <div class="container">

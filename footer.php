@@ -17,7 +17,7 @@
   </div>
 
   <div class=footer-copyright>
-    Copyright © 2017
+    Copyright © <?php echo date("Y");?>
   </div>
 
 </div>
